@@ -18,7 +18,7 @@
 int main(int argc, char *argv[]) {
     if (argc != 3) {
         // There must be three parameters including the object alias or else throws an error.
-        syslog(LOG_ERR, "Usage: %s <file_path> <string_to_add>", argv[0]);
+        syslog(LOG_ERR, "Invalid Inputs-> Usage: %s <file_path> <string_to_add>", argv[0]);
         closelog();
         exit(1);
     }
